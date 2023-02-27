@@ -1,0 +1,19 @@
+img{
+  height: 10rem;
+}
+.App-header{
+  display: flex;
+  align-items: center;
+  color: rgba(255, 0, 0, 0.836);
+  border-bottom: 2px solid;
+}
+.App-body{
+  margin-top: 2.5rem;
+  margin-left: 3rem;
+}
+.App-footer{
+  margin-top: 15rem;
+  border-top: 2px solid red;
+  display: flex;
+  justify-content: center;
+}
