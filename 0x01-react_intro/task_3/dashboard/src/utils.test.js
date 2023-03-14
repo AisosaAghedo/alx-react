@@ -1,23 +1,23 @@
+import react from 'react';
+import {act} from 'react-dom/test-utils';
 import { getFullYear, getFooterCopy, getLatestNotification } from "./utils";
 
-test("function returns current year", () => {
-  const year = getFullYear();
-  expect(year).toEqual(2023);
+
+test("function getFullYear returns current year", () => {
+  expect(getFullYear()).toBe(2023);
 });
 
-test("returns correct string when boolean arg is true", () => {
-  const str = getFooterCopy(true);
-  expect(str).toEqual("Holberton School");
+test(" function getFooterCopy returns corect string when true", () => {
+  expect(getFooterCopy(true)).toBe("Holberton School");
 });
 
-test("returns correct string when boolean arg is false", () => {
-  const str = getFooterCopy(false);
-  expect(str).toEqual("Holberton School main dashboard");
+test("function getFooterCopy returns correct string when false", () => {
+  
+  expect(getFooterCopy(false)).toBe("Holberton School main dashboard");
 });
-
 test("returns dict containing string value", () => {
   const str = getLatestNotification();
-  expect(str.__html).toEqual(
+  expect(str).toBe(
     "<strong>Urgent requirement</strong> - complete by EOD"
   );
 });

@@ -3,10 +3,10 @@
  padding: 1rem;
  margin-bottom: 1.5rem;
 }
-.default{
+[data-priority='default']{
  color: blue;
 }
-.urgent{
+[data-priority='urgent']{
  color: red;
 }
 #close{ width: 1rem;

@@ -4,7 +4,7 @@ import Notifications from "./Notifications";
 describe("<Notifications />", () => {
   it("tests that Notifications renders without crashing", () => {
     const wrapper = shallow(<Notifications />);
-    expect(wrapper.exist()).toBe(true);
+    expect(wrapper.exists()).toBe(true);
   });
 
   it("tests that Notifications renders three list items", () => {
@@ -12,8 +12,8 @@ describe("<Notifications />", () => {
     expect(wrapper.find("li").length).toBe(3);
   });
 
-  it('tests that Notifications renders the html text "Here is a list of notifications"', () => {
+  it('tests that Notifications renders the html text "Here is the list of notifications"', () => {
     const wrapper = shallow(<Notifications />);
-    expect(wrapper.find("p").text()).toBe("Here is a list of notifications");
+    expect(wrapper.find("p").text()).toBe("Here is the list of notifications");
   });
 });

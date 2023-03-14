@@ -23,11 +23,13 @@ export default function Notifications(){
      </button>
      <p>Here is the list of notifications</p>
      <ul>
-       <li data-priority="default" className='default'>New course available</li>
-       <li data-priority="urgent" className='urgent'>New resume available</li>
-       <li data-priority="urgent" className='urgent' id='urgent'>{getLatestNotification()}
+       <li data-priority="default" className="default">
+         New course available
        </li>
+       <li data-priority="urgent">
+         New resume available
+       </li>
+       <li data-priority='urgent' dangerouslySetInnerHTML={{ __html: getLatestNotification() }}></li>
      </ul>
    </div>
- );
-}
+ )};

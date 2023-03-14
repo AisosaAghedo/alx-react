@@ -1,0 +1,9 @@
+img{
+  height: 10rem;
+}
+.App-header{
+  display: flex;
+  align-items: center;
+  color: rgba(255, 0, 0, 0.836);
+  border-bottom: 2px solid;
+}
