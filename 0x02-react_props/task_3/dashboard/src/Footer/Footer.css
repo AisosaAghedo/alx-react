@@ -1,0 +1,6 @@
+.App-footer p{
+  margin-top: 15rem;
+  border-top: 2px solid red;
+  display: flex;
+  justify-content: center;
+}
