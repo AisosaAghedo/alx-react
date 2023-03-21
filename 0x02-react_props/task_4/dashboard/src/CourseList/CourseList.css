@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+th{
+ border-bottom: 1px solid black;
+ text-align: left;
+}
+th[colSpan="2"]{
+ text-align: center;
+}

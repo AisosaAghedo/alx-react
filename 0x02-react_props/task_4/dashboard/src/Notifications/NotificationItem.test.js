@@ -13,12 +13,9 @@ describe("NotificationItem component", () => {
     // console.log(wrapper.html());
     expect(html).toBe('<li data-notification-type="default">test</li>');
   });
-
-  it("renders the correct html (with given dummy html props)", () => {
-    const wrapper = shallow(
-      <NotificationItem html={{ __html: "<u>test</u>" }} />
-    );
-    const html = wrapper.html();
-    expect(html).toBe("<li><u>test</u></li>");
-  });
+  it('renders the correct html (with given dummy html props)', () => {
+    const wrapper = shallow(<NotificationItem html={{ __html: '<u>test</u>' }}/>);
+    const html = wrapper.html()
+    expect(html).toBe('<li data-notification-type="default"><u>test</u></li>')
+  })
 });

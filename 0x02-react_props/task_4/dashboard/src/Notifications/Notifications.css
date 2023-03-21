@@ -12,5 +12,8 @@
 }
 #close{ width: 1rem;
  height: 1rem;
-
+}
+.menuItem{
+ display: flex;
+ justify-content: right;
 }

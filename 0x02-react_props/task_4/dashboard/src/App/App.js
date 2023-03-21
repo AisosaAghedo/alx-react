@@ -3,23 +3,37 @@ import Header from "../Header/Header.js";
 import Footer from '../Footer/Footer.js';
 import Login from '../Login/Login.js';
 import Notifications from "../Notifications/Notifications.js";
+import CourseList from "../CourseList/CourseList.js"
 import './App.css'
+import PropTypes from 'prop-types';
 
-function App() {
+App.defaultProps = { isLoggedIn: false };
+
+function App(props) {
+  const LoginState = () => {
+  if (props.isLoggedIn === true) {
+    return <CourseList />;
+  } else {
+    return (
+      <div className="App-body">
+        <Login />
+      </div>
+    );
+  }
+};
   return (
     <>
-    <Notifications/>
+      <Notifications />
       <div className="App-header">
-        <Header/>
+        <Header />
       </div>
-      <div className="App-body">
-        <Login/>
-      </div>
+      {LoginState()}
       <div className="App-footer">
-        <Footer/>
+        <Footer />
       </div>
     </>
-  )
+  );
 }
 
 export default App;
+
